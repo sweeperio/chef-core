@@ -1,5 +1,3 @@
-require "./libraries/chef/node"
-
 describe Chef::Node do
   let(:node) { described_class.new }
 
