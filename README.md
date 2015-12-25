@@ -1,5 +1,7 @@
 # core
 
+[![Build Status](https://travis-ci.org/sweeperio/chef-core.svg?branch=master)](https://travis-ci.org/sweeperio/chef-core)
+
 A library cookbook that can be used across the organization. There are some assumptions made here (like the names of
 data bags, etc.) that kinda render this useless outside of our chef setup.
 
