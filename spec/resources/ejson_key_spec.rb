@@ -29,7 +29,7 @@ describe "ejson_key resource", :data_bags do
     let(:owner) { "root" }
     let(:group) { "root" }
 
-    cached(:chef_run) do
+    let(:chef_run) do
       runner = ChefSpec::SoloRunner.new(step_into: "ejson_key")
       runner.converge("recipe[test::ejson]")
     end
@@ -41,7 +41,7 @@ describe "ejson_key resource", :data_bags do
     let(:owner) { "deploy_user" }
     let(:group) { "deploy_group" }
 
-    cached(:chef_run) do
+    let(:chef_run) do
       runner = ChefSpec::SoloRunner.new(step_into: "ejson_key") do |node|
         node.set["test"]["ejson"]["owner"] = owner
         node.set["test"]["ejson"]["group"] = group

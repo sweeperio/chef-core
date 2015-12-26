@@ -1,4 +1,4 @@
-class Chef::Node
+module Core::Helpers::AttrHelper
   class AttributeDoesNotExistError < StandardError; end
 
   def attr(*keys)
