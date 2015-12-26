@@ -1,8 +1,7 @@
 require "chefspec"
 require "chefspec/berkshelf"
 
-require "./libraries/core"
-
+Dir["./libraries/*.rb"].each { |f| require f }
 Dir["./spec/support/**/*.rb"].each { |f| require f }
 
 RSpec.configure do |config|

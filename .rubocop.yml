@@ -7,7 +7,7 @@ Style/StringLiterals:
   EnforcedStyle: double_quotes
 
 Style/ClassAndModuleChildren:
-  EnforcedStyle: compact
+  EnforcedStyle: nested
 
 Style/Documentation:
   Enabled: false
