@@ -1,9 +1,20 @@
 ---
-language: ruby
-cache: bundler
-rvm:
-  - 2.2.3
+addons:
+  apt:
+    sources:
+      - chef-current-precise
+    packages:
+      - chefdk
+
+install: echo "skipping bundle install"
+
+before_script:
+  - eval "$(/opt/chefdk/bin/chef shell-init bash)"
 
 script:
-  - bundle exec rubocop
-  - bundle exec rspec
+  - chef --version
+  - rubocop --version
+  - foodcritic --version
+  - rspec --version
+  - rake --version
+  - rake
