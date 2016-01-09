@@ -1,4 +1,4 @@
-# core
+# swpr_core
 
 [![Build Status](https://travis-ci.org/sweeperio/chef-core.svg?branch=master)](https://travis-ci.org/sweeperio/chef-core)
 
